@@ -1,0 +1,37 @@
+
+    <section>
+
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="container mt-5 pl-5">
+                    <h2 class="text-center">Admin Login</h2>
+                    <form action="/admin/adhomepage" method="post">
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Enter email">
+
+                        </div>
+                      <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+
+                            <button type="submit" class="btn btn-primary float-right mt-2"  >Login</button>
+                        </div>
+
+                        {{#if error}}
+
+                        <div class="section text-danger">
+                            Sorry, your password and email doesnot match.
+                        </div>
+                        {{/if}}
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    

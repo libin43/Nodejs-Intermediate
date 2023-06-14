@@ -1,0 +1,53 @@
+
+    <section>
+
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="container mt-5 pl-5">
+                    <h2 class="text-center">Add User</h2>
+                    <form action="/admin/add-user" method="post" role="form" id="submit-form">
+                        <div class="form-group">
+                            <label for="">First Name</label>
+                            <input type="text" class="form-control" id="contact-fname" name="firstName" placeholder="First Name" onkeyup="validateFirstName()" >
+                            <span id="fname-error" style="color: red;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Last Name</label>
+                            <input type="text" class="form-control" id="contact-lname" name="lastName" placeholder="Last Name" onkeyup="validateLastName()">
+                             <span id="lname-error" style="color: red;"></span>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Email" onkeyup="validateEmail()">
+                            <span id="email-error" style="color: red;"></span>
+
+                        </div>
+                      <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control" id="contact-password" name="password" placeholder="Password" onkeyup="validatePassword()">
+                            <span id="password-error" style="color: red;"></span>
+                            {{#if emailError}}
+                           <h4 class="text-danger">{{emailError}}</h4>
+							{{/if}}
+                              
+                              <div class="text-center">
+                                 <button type="submit" id="contact-submit" class="btn btn-primary float-right mt-2" onclick="return validateForm()" >Add</button>
+                             <div id="submit-error" style="color: red;"></div>
+                              </div>
+                           
+                        </div>
+
+                        
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+
+
+
+    

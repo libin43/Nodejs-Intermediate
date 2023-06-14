@@ -1,0 +1,29 @@
+
+  
+
+     <section>
+    <div class="container mt-5">
+        <div class="row">
+          
+            
+     {{#each products}}
+        <div class="col-md-3 container-fluid">
+            <div class="card text-white bg-dark mb-3 text-center " style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"> Track : {{this.track}}</h5>
+    <p class="card-text">Movie : {{this.movie}}</p>
+    <p class="card-text">Singer : {{this.artist}}</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+        </div>
+
+        {{/each}}
+       
+    </div>
+    </div>
+   </section>
+
+ 
+
+    

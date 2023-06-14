@@ -1,0 +1,52 @@
+
+    <section>
+
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="container mt-5 pl-5">
+                    <h2 class="text-center">Login To i-Music</h2>
+                    <form action="/" method="post">
+                        <div class="form-group mt-2">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Enter email">
+
+                        </div>
+                      <div class="form-group mt-4">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                             
+                        </div>
+                        <div class="form-group text-center mt-3">
+                             
+                            <button type="submit" class="btn btn-primary float-right mt-2 w-50"  >Login</button>
+                            
+
+                        </div>
+
+                        
+                        {{#if error}}
+
+                        <div class="section text-danger text-center">
+                            Sorry, your password and email doesnot match.
+                        </div>
+                        {{/if}}
+
+                        <div class="form-group mt-3">
+                             <a href="/signup">Create new account ?</a>
+                        </div>
+                       
+
+                        <div class="form-group mt-4">
+                             <a href="/admin">Redirect to admin login</a>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    
